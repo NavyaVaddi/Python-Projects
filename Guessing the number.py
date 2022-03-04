@@ -1,6 +1,27 @@
 # The program generates a random number from 1 to 10, or 1 to 100 any range that is specified and the user must guess the number after a hint # from the computer. Every time a user’s guess is wrong they are prompted with more hints to make it easier for them to guess the number but 
 # at the cost of reducing the score. The clue any math clue like multiples, divisible, greater or smaller, or a combination of all.
 
+# Using while loop
+
+import random
+
+def guess(x):
+ random_number = random.randint(1,x)
+ guess = 0
+ while guess != random_number:
+  guess = int(input("Guess a number between 1 and (x): "))
+  
+  if guess< random_number:
+   print("Sorry. Guess again. too low")
+  elif guess > random_number:
+   print("Sorry, Guess again. too high")
+  
+  print("Yay, Congrats, You have guessed the number {random_number} correctly")
+ 
+guess(10)
+
+# using try and except method
+
 import random
 attempts_list = []
 def show_score():

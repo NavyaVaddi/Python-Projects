@@ -16,15 +16,15 @@ def validate_time(alarm_time):
   else:
    return "ok"
  
- while True:
-  alarm_time = input("Enter time in 'HH:MM:SS AM/PM' format: ")
+while True:
+ alarm_time = input("Enter time in 'HH:MM:SS AM/PM' format: ")
 
-  validate = validate_time(alarm_time.lower())
-  if validate != "ok":
-   print(validate)
-  else:
-   print(f"Setting alarm for {alarm_time}...")
-   break
+ validate = validate_time(alarm_time.lower())
+ if validate != "ok":
+  print(validate)
+ else:
+  print(f"Setting alarm for {alarm_time}...")
+  break
 
  alarm_hour = alarm_time[0:2]
  alarm_min = alarm_time[3:5]

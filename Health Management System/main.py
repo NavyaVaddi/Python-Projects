@@ -29,8 +29,7 @@ while(1):
       f.close()
      except:
       print("Details not found")
-
-    elif type == 2:
+   elif type == 2:
      try:
       f = open("navya_diet.txt","rt")
       print("\nDetails :")
@@ -85,7 +84,6 @@ while(1):
      print("\nWRONG INPUT!")
 
 #Writing to the file
-
  if answer == 2:
   #If the user is Navya
   if name == 1:
@@ -120,7 +118,6 @@ while(1):
     f.close()
    else:
     print("\nWRONG INPUT!")
-
  #If the user is Aadhya
   elif name == 3:
    if type == 1:

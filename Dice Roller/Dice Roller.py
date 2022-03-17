@@ -10,7 +10,6 @@ while True:
 
     # Asking user to roll the dice again or quit 
     repeat = input("Roll Dice again? 'y' for yes & 'n' for no: ")
-
     # If the user answers negative the loop will break and program execution stops otherwise the program will continue executing 
     if repeat == 'n':
         break
